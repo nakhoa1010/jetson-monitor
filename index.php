@@ -13,7 +13,7 @@
     <script>
         function updateStats() {
             $.ajax({
-                url: 'data.php', // PHP script to fetch data
+                url: 'https://raw.githubusercontent.com/nakhoa1010/jetson-monitor/main/data.php', // PHP script to fetch data
                 success: function(data) {
                     $('#stats').html(data);
                 }
