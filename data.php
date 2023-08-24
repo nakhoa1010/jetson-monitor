@@ -5,7 +5,7 @@ $password = "n5UMLqP!SG*b3f#";
 $database = "monitor-db";
 
 $conn = mysqli_init();
-mysqli_ssl_set($conn,NULL,NULL, "K:\jetson\azure\DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
 mysqli_real_connect($conn, $server, $user, $password, $database, 3306, MYSQLI_CLIENT_SSL);
 
 if ($conn->connect_error) {
