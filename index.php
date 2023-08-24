@@ -24,7 +24,7 @@
         updateStats();
         setInterval(updateStats, 5000); // Update every 5 seconds
         $.ajax({
-    url: 'https://raw.githubusercontent.com/nakhoa1010/jetson-monitor/main/data.php',
+    url: 'data.php',
     success: function(data) {
         $('#stats').html(data);
     },
