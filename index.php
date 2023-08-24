@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>System Stats</h1>
+    <h1>An ngu vãi lồn</h1>
     <div id="stats">
         <!-- Display data here -->
     </div>
