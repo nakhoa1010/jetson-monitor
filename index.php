@@ -23,6 +23,18 @@
         // Initial load and periodic updates
         updateStats();
         setInterval(updateStats, 5000); // Update every 5 seconds
+        $.ajax({
+    url: 'https://raw.githubusercontent.com/nakhoa1010/jetson-monitor/main/data.php',
+    success: function(data) {
+        $('#stats').html(data);
+    },
+    error: function(xhr, status, error) {
+        console.error(error);
+    },
+    complete: function(xhr, status) {
+        console.log(status);
+    }
+});
     </script>
 </body>
 </html>
