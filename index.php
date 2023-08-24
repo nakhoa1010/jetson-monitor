@@ -13,7 +13,7 @@
     <script>
         function updateStats() {
             $.ajax({
-                url: 'data.php', // PHP script to fetch data
+                url: '../data.php', // PHP script to fetch data
                 success: function(data) {
                     $('#stats').html(data);
                 }
